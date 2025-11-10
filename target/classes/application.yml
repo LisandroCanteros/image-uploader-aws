@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/uploader
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+aws:
+  region: us-east-1
+  s3:
+    bucket: my-image-bucket-<yourname>
+  sqs:
+    queue-url: https://sqs.us-east-1.amazonaws.com/123456789012/image-upload-events
