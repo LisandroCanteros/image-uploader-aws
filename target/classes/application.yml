@@ -6,11 +6,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
 
 aws:
   region: us-east-1
   s3:
-    bucket: my-image-bucket-<yourname>
+    bucket: my-image-bucket-lisandrocanteros
   sqs:
-    queue-url: https://sqs.us-east-1.amazonaws.com/123456789012/image-upload-events
+    queue-url: https://sqs.us-east-1.amazonaws.com/428497370716/image-upload-events

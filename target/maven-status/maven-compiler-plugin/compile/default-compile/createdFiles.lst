@@ -1,1 +1,3 @@
 com\example\imageuploader\ImageUploaderApplication.class
+com\example\imageuploader\model\Image.class
+com\example\imageuploader\Repository\ImageRepository.class
