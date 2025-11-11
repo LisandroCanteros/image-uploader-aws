@@ -7,15 +7,16 @@ import software.amazon.awssdk.auth.credentials.AwsCredentialsProvider;
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
+import software.amazon.awssdk.services.sqs.SqsClient;
+
 import java.net.URI;
-
-
 
 @Configuration
 public class AwsConfig {
     @Value("${aws.region:us-east-1}")
     private String awsRegion;
-    @Value("${aws.s3.endpoint:}")
+
+    @Value("${aws.endpoint:}")
     private String awsEndpoint;
 
     @Bean
@@ -25,21 +26,17 @@ public class AwsConfig {
 
     @Bean
     public S3Client s3Client(AwsCredentialsProvider creds) {
-
-        // 1. The S3Client.Builder class is now recognized because the necessary
-        //    imports for S3Client and Region were already present.
-        S3Client.Builder b = S3Client.builder()
+        return S3Client.builder()
                 .credentialsProvider(creds)
-                // We use the injected region value
-                .region(Region.of(awsRegion));
-
-        // 2. URI.create is now recognized due to the added 'import java.net.URI;'
-        // We use the injected endpoint value
-        if (!awsEndpoint.isEmpty()) {
-            b = b.endpointOverride(URI.create(awsEndpoint));
-        }
-
-        return b.build();
+                .region(Region.of(awsRegion))
+                .build();
     }
 
+    @Bean
+    public SqsClient sqsClient(AwsCredentialsProvider creds) {
+        return SqsClient.builder()
+                .credentialsProvider(creds)
+                .region(Region.of(awsRegion))
+                .build();
+    }
 }

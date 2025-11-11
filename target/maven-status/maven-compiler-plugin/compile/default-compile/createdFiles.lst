@@ -1,3 +1,8 @@
+com\example\imageuploader\service\SqsService.class
 com\example\imageuploader\ImageUploaderApplication.class
+com\example\imageuploader\service\S3Service.class
+com\example\imageuploader\repository\ImageRepository.class
+com\example\imageuploader\config\AwsConfig.class
+com\example\imageuploader\config\SecurityConfig.class
+com\example\imageuploader\controller\ImageController.class
 com\example\imageuploader\model\Image.class
-com\example\imageuploader\Repository\ImageRepository.class

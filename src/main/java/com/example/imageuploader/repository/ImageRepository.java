@@ -1,4 +1,4 @@
-package com.example.imageuploader.Repository;
+package com.example.imageuploader.repository;
 
 import com.example.imageuploader.model.Image;
 import org.springframework.data.jpa.repository.JpaRepository;

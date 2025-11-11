@@ -1,4 +1,8 @@
 C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\config\AwsConfig.java
+C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\config\SecurityConfig.java
+C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\controller\ImageController.java
 C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\ImageUploaderApplication.java
 C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\model\Image.java
-C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\Repository\ImageRepository.java
+C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\repository\ImageRepository.java
+C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\service\S3Service.java
+C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\service\SqsService.java
