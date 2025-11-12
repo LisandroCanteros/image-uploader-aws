@@ -12,7 +12,7 @@ public class S3Service {
     private final S3Client s3;
     private final String bucket;
 
-    public S3Service(S3Client s3, @Value("${aws.s3.bucket}") String bucket) {
+    public S3Service(S3Client s3, @Value("${spring.cloud.aws.s3.bucket}") String bucket) {
         this.s3 = s3;
         this.bucket = bucket;
     }

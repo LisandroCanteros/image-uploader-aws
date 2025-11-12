@@ -12,9 +12,11 @@ spring:
       name: user
       password: 1234
 
-aws:
-  region: us-east-1
-  s3:
-    bucket: my-image-bucket-lisandrocanteros
-  sqs:
-    queue-url: https://sqs.us-east-1.amazonaws.com/428497370716/image-upload-events
+  cloud:
+    aws:
+      region:
+        static: us-east-1
+      s3:
+        bucket: my-image-bucket-lisandrocanteros
+      sqs:
+        queue-url: https://sqs.us-east-1.amazonaws.com/428497370716/image-upload-events

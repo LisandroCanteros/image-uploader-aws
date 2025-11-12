@@ -5,4 +5,5 @@ C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\i
 C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\model\Image.java
 C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\repository\ImageRepository.java
 C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\service\S3Service.java
+C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\service\SqsConsumerService.java
 C:\Users\Lisandro\Documents\naranja-x\image-uploader\src\main\java\com\example\imageuploader\service\SqsService.java

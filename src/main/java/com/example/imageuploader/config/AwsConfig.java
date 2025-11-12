@@ -9,15 +9,10 @@ import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.sqs.SqsClient;
 
-import java.net.URI;
-
 @Configuration
 public class AwsConfig {
     @Value("${aws.region:us-east-1}")
     private String awsRegion;
-
-    @Value("${aws.endpoint:}")
-    private String awsEndpoint;
 
     @Bean
     public AwsCredentialsProvider awsCredentialsProvider() {
@@ -25,17 +20,15 @@ public class AwsConfig {
     }
 
     @Bean
-    public S3Client s3Client(AwsCredentialsProvider creds) {
+    public S3Client s3Client() {
         return S3Client.builder()
-                .credentialsProvider(creds)
                 .region(Region.of(awsRegion))
                 .build();
     }
 
     @Bean
-    public SqsClient sqsClient(AwsCredentialsProvider creds) {
+    public SqsClient sqsClient() {
         return SqsClient.builder()
-                .credentialsProvider(creds)
                 .region(Region.of(awsRegion))
                 .build();
     }

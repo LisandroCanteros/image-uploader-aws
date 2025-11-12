@@ -10,7 +10,7 @@ public class SqsService {
     private final SqsClient sqs;
     private final String queueUrl;
 
-    public SqsService(SqsClient sqs, @Value("${aws.sqs.queue-url}") String queueUrl) {
+    public SqsService(SqsClient sqs, @Value("${spring.cloud.aws.sqs.queue-url}") String queueUrl) {
         this.sqs = sqs;
         this.queueUrl = queueUrl;
     }
