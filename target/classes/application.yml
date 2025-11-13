@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/uploader
+    url: jdbc:postgresql://database-uploader.ccd0ys042lr3.us-east-1.rds.amazonaws.com:5432/uploader
     username: postgres
     password: postgres
   jpa:
